@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/inputAndSelection_widget.dart';
+import 'basic_widgets/dateAndTimePickers.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -11,10 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Contoh Date Picker',
       home: Scaffold(
-        appBar: AppBar(title: const Text("Contoh TextField")),
+        appBar: AppBar(
+          title: const Text('Contoh Date Picker'),
+        ),
         body: const Center(
-          child: MyTextFieldWidget(),
+          child: MyDatePickerWidget(),
         ),
       ),
     );
