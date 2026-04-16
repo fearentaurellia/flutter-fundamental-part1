@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/alert_widget.dart';
+import 'basic_widgets/inputAndSelection_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: MyAlertWidget(),
+        appBar: AppBar(title: const Text("Contoh TextField")),
+        body: const Center(
+          child: MyTextFieldWidget(),
         ),
       ),
     );
